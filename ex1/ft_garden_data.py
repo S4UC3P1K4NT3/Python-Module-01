@@ -1,12 +1,18 @@
+
+class plants:
+    def __init__(self,name,Height,Age):
+        self.name = name
+        self.Height = Height
+        self.Age = Age
+
 if __name__ == "__main__":
-    plants = [
-        {"name": "Rose", "Height": "25", "Age": "30"},
-        {"name": "Sunflower", "Height": "80", "Age": "45"},
-        {"name": "Cactus", "Height": "15", "Age": "120"}
-    ]
+    plant1 = plants("Rose",25,30)
+    plant2 = plants("Sunflower",80,45)
+    plant3 = plants("Cactus",15,120)
+    garden = [plant1,plant2,plant3]
     print("=== Garden Plant Registry ===")
-    for flowers in plants:
+    for flowers in garden:
         print(
-            f"{flowers['name']}: {flowers['Height']}cm, "
-            f"{flowers['Age']} days old"
+            f"{flowers.name}: {flowers.Height}cm, "
+            f"{flowers.Age} days old"    
         )
