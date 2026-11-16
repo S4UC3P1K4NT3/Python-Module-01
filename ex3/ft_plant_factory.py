@@ -22,6 +22,6 @@ if __name__ == "__main__":
     for i in range(5):
         print(
             f"Created: "
-            f"{garden[i].name}: {garden[i].Height:.1f}cm, "
+            f"{garden[i].name}: {garden[i].Height}cm, "
             f"{garden[i].Age} days old"
         )
