@@ -24,7 +24,7 @@ class Plant:
             self._height = height
         if age < 0:
             print(f"Invalid age {age} days, default value set (10 days).")
-            self._age = 10.0
+            self._age = 10
         else:
             self._age = age
 
@@ -66,7 +66,7 @@ class Plant:
     def get_height(self) -> float:
         return self._height
 
-    def get_age(self) -> int | float:
+    def get_age(self) -> int:
         return self._age
 
     def show(self) -> None:

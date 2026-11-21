@@ -3,7 +3,7 @@ class Plant:
         self._name = name
         if height < 0:
             print(f"Invalid height {height}cm, default value set (25cm).")
-            self._height = 25
+            self._height = 25.0
         else:
             self._height = height
         if age < 0:
