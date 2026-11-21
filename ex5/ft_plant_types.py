@@ -83,14 +83,15 @@ class Tree(Plant):
               f"{self._height:.1f}cm long and {self._trunk_diameter}cm wide.")
 
     def show(self):
-            super().show()
-            print(f"Trunk diameter: {self._trunk_diameter}cm")
+        super().show()
+        print(f"Trunk diameter: {self._trunk_diameter}cm")
+
 
 class Vegetable(Plant):
     def __init__(
                  self, name: str,
                  height: float,
-                 age: int, 
+                 age: int,
                  harvest_season: str,
                  nutritional_value: int):
         super().__init__(name=name, height=height, age=age)
