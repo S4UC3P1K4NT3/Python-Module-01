@@ -79,8 +79,8 @@ class Tree(Plant):
     def produce_shade(self):
         self.producing_shade = True
         print(
-              f"The {self._name} is now producing shade of "
-              f"{self._height:.1f}cm long and {self._trunk_diameter}cm wide.")
+            f"The {self._name} is now producing shade of "
+            f"{self._height:.1f}cm long and {self._trunk_diameter}cm wide.")
 
     def show(self):
         super().show()
@@ -89,11 +89,11 @@ class Tree(Plant):
 
 class Vegetable(Plant):
     def __init__(
-                 self, name: str,
-                 height: float,
-                 age: int,
-                 harvest_season: str,
-                 nutritional_value: int):
+            self, name: str,
+            height: float,
+            age: int,
+            harvest_season: str,
+            nutritional_value: int):
         super().__init__(name=name, height=height, age=age)
         self._harvest_season = harvest_season
         self._nutritional_value = nutritional_value
