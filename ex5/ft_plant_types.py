@@ -13,7 +13,7 @@ class Plant:
             self._age = age
 
     def grow(self) -> None:
-        self._height += 0.8
+        self._height += 2.1
 
     def age(self) -> None:
         self._age += 1
@@ -54,7 +54,7 @@ class Flower(Plant):
         self._hasbloom = False
 
     def bloom(self):
-        self.hasbloom = True
+        self._hasbloom = True
         print(f"The {self._name} has bloomed succesfully.")
 
     def show(self):
@@ -77,7 +77,7 @@ class Tree(Plant):
         self._producing_shade = False
 
     def produce_shade(self):
-        self.producing_shade = True
+        self._producing_shade = True
         print(
             f"The {self._name} is now producing shade of "
             f"{self._height:.1f}cm long and {self._trunk_diameter}cm wide.")
