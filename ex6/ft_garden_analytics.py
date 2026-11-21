@@ -66,7 +66,7 @@ class Plant:
     def get_height(self) -> float:
         return self._height
 
-    def get_age(self) -> int:
+    def get_age(self) -> int | float:
         return self._age
 
     def show(self) -> None:
