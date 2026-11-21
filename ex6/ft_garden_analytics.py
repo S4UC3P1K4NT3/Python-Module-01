@@ -9,11 +9,10 @@ class Plant:
             self._growcount += 1
 
         def addage(self) -> None:
-            self._agecount +=1
+            self._agecount += 1
 
         def addshow(self) -> None:
-            self._showcount +=1
-
+            self._showcount += 1
 
     def __init__(self, name: str, height: float, age: int) -> None:
         self._name = name
@@ -35,7 +34,7 @@ class Plant:
 
     @staticmethod
     def olderthanyear(days: int) -> bool:
-            return days > 364
+        return days > 364
 
     def grow(self) -> None:
         self._height += 8
@@ -152,16 +151,16 @@ class Vegetable(Plant):
 
 class Seed(Flower):
     def __init__(self,
-                name: str,
-                height: float,
-                age: int,
-                color: str,
-                seeds: int
-                ) -> None:
+                 name: str,
+                 height: float,
+                 age: int,
+                 color: str,
+                 seeds: int
+                 ) -> None:
         super().__init__(name=name, height=height, age=age, color=color)
         self._seeds = 0
         self._seedstoadd = seeds
-        
+
     def addseeds(self):
         self._seeds = self._seedstoadd
 
@@ -176,6 +175,7 @@ class Seed(Flower):
 
 def showstats(plant: Plant):
     print(f"{plant.getstats()}")
+
 
 if __name__ == "__main__":
     print("=== Garden Statistics ===")
@@ -216,4 +216,3 @@ if __name__ == "__main__":
     Unknown.show()
     print("[statistics for Unknown plant]")
     showstats(Unknown)
-
