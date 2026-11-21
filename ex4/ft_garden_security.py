@@ -59,10 +59,5 @@ if __name__ == "__main__":
     rose.set_age(-3)
 
     print()
-    print(f"Current plant: {rose.get_name()} "
-          f"({rose.get_height()}cm, {rose.get_age()} days)")
-
-    print()
-    bad = Plant("Cactus", -10, -2)
-    print(f"Current plant: {bad.get_name()} "
-          f"({bad.get_height()}cm, {bad.get_age()} days)")
+    print(f"Current state: {rose.get_name()}: "
+          f"{rose.get_height()}cm, {rose.get_age()} days old")
