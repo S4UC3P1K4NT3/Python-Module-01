@@ -19,12 +19,12 @@ class Plant:
         self._stats = self.Stats()
         if height < 0:
             print(f"Invalid height {height}cm, default value set (25cm).")
-            self._height = 25
+            self._height = 25.0
         else:
             self._height = height
         if age < 0:
             print(f"Invalid age {age} days, default value set (10 days).")
-            self._age = 10
+            self._age = 10.0
         else:
             self._age = age
 
@@ -37,7 +37,7 @@ class Plant:
         return days > 364
 
     def grow(self) -> None:
-        self._height += 8
+        self._height += 8.0
         self._stats.addgrow()
 
     def age(self) -> None:
